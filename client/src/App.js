@@ -59,23 +59,6 @@ function App() {
     setInput(inputValue);
   }
   
-  // async function searchHandler(e) {
-  //   e.preventDefault();
-
-  // let found =  characters.find((character) => character.id === Number(input));
-
-  // if (!found){
-  //     // fetch(`https://rickandmortyapi.com/api/character/${input}`) >> con este si funciona
-  //     let response = await fetch(`http://localhost:3001/rickandmorty/characters/${input}`)
-  //       try {
-  //         let {data:char} = response;
-  //            if (char.name) setCharacters((oldChars) => [...oldChars, char]);
-  //            else window.alert('No hay personajes con ese ID');
-  //       } catch (error) {
-  //         alert(error); 
-  //       }
-  //     }
-  // }
 
   async function searchHandler(e) {
     e.preventDefault();
@@ -113,7 +96,6 @@ function App() {
 
     if (!haveIt.includes(random)) {
       haveIt.push(random);
-      // fetch(`https://rickandmortyapi.com/api/character/${random}`) >> con este si funciona
       fetch(`http://localhost:3001/rickandmorty/characters/${random}`)
          .then((response) => response.json())
          .then((data) => {
