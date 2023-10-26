@@ -1,13 +1,9 @@
 const {Router} = require("express");
-const getCharById = require("../controllers/getCharById");
-const login = require("../controllers/login");
-const {postFav, deleteFav} = require("../controllers/favorites");
+const routes = require("./routes");
 
 const router = Router();
 
-router.get("/characters/:id", getCharById);
-router.get("/login", login);
-router.post("/fav", postFav);
-router.delete("/fav/:id", deleteFav);
+router.use('/', routes)
+
 
 module.exports = router; 

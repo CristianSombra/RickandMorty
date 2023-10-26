@@ -1,24 +1,34 @@
-import {ADD_FAVORITE, REMOVE_FAVORITE} from "./actions";
+import {ERROR, GET_CHARACTERS } from "./actions";
 
+const initialState = {
+    characters: []};
 
-
-const initialState = {favorites:[], characters: []};
-
-function rootReducer (state = initialState, action) {
+const rootReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case ADD_FAVORITE:
-        return {
-            ...state, 
-            favorites:[...state.favorites, action.payload]
-        }
+        case ERROR:
+            return {
+                ...state,
+                error: action.payload,
+            };
 
-        case REMOVE_FAVORITE:
-        return {
-           ...state, 
-           favorites: state.favorites.filter(
-                (character) => character.id !== action.payload)
-        };
+        case GET_CHARACTERS:
+            return {
+                ...state,
+                characters: action.payload, 
+            }
+        // case ADD_FAVORITE:
+        // return {
+        //     ...state, 
+        //     favorites:[...state.favorites, action.payload]
+        // }
+
+        // case REMOVE_FAVORITE:
+        // return {
+        //    ...state, 
+        //    favorites: state.favorites.filter(
+        //         (character) => character.id !== action.payload)
+        // };
     
         default:
             return state;

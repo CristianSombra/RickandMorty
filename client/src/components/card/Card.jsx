@@ -1,89 +1,24 @@
-// import characters from '../../data';
-import {useNavigate} from 'react-router-dom';
-import {addFavorite, removeFavorite} from "../../redux/actions";
-import { useState, useEffect } from 'react';
-import {connect} from "react-redux";
-import './Card.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
 
-function Card(props) {
-  const navigate = useNavigate();
-  const {character, onClose, addFavorite, removeFavorite, favorites} = props;
-  const [closeBtn, setCloseBtn] = useState(true);
-  const [isFav,setIsFav] = useState(false);
-
-
-  useEffect(() => {
-    if (!onClose) {
-      setCloseBtn(false);
-    }
-  }, [])
-
-
-  useEffect(() => {
-    favorites.forEach((fav) => {
-       if (fav.id === character.id) {
-          setIsFav(true);
-       }
-    });
- }, [favorites]);
-
-
-    function navigateHandler () {
-      navigate (`/Detail/${character.id}`);
-    };
-
-    function favoriteHandler (data) {
-      if(isFav){
-        removeFavorite(data)
-        setIsFav(false)
-      } else {
-        addFavorite(data)  
-        setIsFav(true)
-      } 
-    };
+const Card = ({ id, image, name, species, gender }) => {
+  const cardStyle = {
+    width: '18rem'
+  };
   
     return (
-      <div className="card-container">
-        <div className="image-container">
-          <img
-            className="character-image"
-            onClick={navigateHandler}
-            src={character.image}
-            alt={character.name}
-          />
-          <h2 className="name">{character.name}</h2>
-          { isFav ? (
-            <button onClick={() => favoriteHandler(character.id) }>❤️</button>
-            ) : (
-            <button onClick={() => favoriteHandler(character) }>🤍</button>
-            )}
-          
-          {closeBtn ? (
-          <button className="close-button" onClick={() => onClose(character.id)}>
-            X
-          </button>
-          ) : null }
-        </div>
-        <div className="atributes">
-          <h2>{character.species}</h2>
-          <h2>{character.gender}</h2>
+      <div class="card" style={cardStyle}>
+        <img src={image} class="card-img-top" alt={name}></img>
+        <div class="card-body">
+          <h5 class="card-title">{name}</h5>
+          <h2>{species}</h2>
+          <h2>{gender}</h2>
+          <Link to={`/detail/${id}`} class="btn btn-primary">Aquí iría a la descripción del personaje</Link>
         </div>
       </div>
+
     );
   }
 
-  const mapDispatchToProps = (dispatch) => {
-    return {
-      addFavorite:(character) => dispatch(addFavorite(character)),
-      removeFavorite:(id) => dispatch(removeFavorite(id))
-  }
-};
-
-const mapStateToProps = (state) => {
-  return {
-    favorites: state.favorites,
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Card);
+  export default Card;

@@ -1,6 +1,9 @@
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 5%;
+    color: white;
   }
+
+.container-cardscontainer {
+  margin-top: 5%;
+}
   

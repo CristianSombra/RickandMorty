@@ -5,8 +5,8 @@
             "server": "localhost",
             "port": 5432,
             "driver": "PostgreSQL",
-            "name": "rickandmorty",
-            "database": "rickandmorty",
+            "name": "rick&morty",
+            "database": "rick&morty",
             "username": "postgres"
         }
     ]
