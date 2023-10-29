@@ -1,8 +1,8 @@
 import React from 'react';
 import {Routes, Route, useLocation} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { Landing, Home } from './views/index';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Landing, Home, Favorites, About } from './views/index';
 import Navbar from './components/navBar/navBar'
 import './App.css';
 
@@ -19,6 +19,8 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<Landing />} />
                 <Route path="/Home" element={<Home />} />
+                <Route path="/Favorites" element={<Favorites />} />
+                <Route path="/About" element={<About />} />
                 {/* <Route path="/Detail/:id" element={<Detail />} /> */}
                 {/* <Route path="*" element={<PageNotFound />} /> */}
             </Routes>

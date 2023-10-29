@@ -1,14 +1,23 @@
-// import "./About.css";
+import { Link } from "react-router-dom";
+import "./About.css";
 
-// function About() {
-//     return (
-// <div className="about-container">
-//     <h2>Acerca de Rick</h2>
-//     <p>Después de haber estado desaparecido durante casi 20 años, Rick Sánchez llega de imprevisto a la puerta de la casa de su hija Beth y se va a vivir con ella y su familia utilizando el garaje como su laboratorio personal.</p>
-// </div>
-//     );
+function About () {
+    return (
+        <div className="card-container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Proyecto Integrador Rick and Morty</h1>
+                    <h2 class="card-subtitle mb-2">Bootcamp Henry</h2>
+                    <p class="card-text">Éste proyecto se fue armando al realizar todas las homeworks de cada módulo cursado. Desde el Frontend hasta el Backend, se trabajó sobre los estilos, servidor y creación de base de datos. Sin embargo, éste pequeño proyecto cuenta con actualizaciones como código mas estructurado y aplicación de estilo mejorado y mediante Bootstrap se le pudo dar responsividad. Orgulloso de mi primer proyecto.</p>
+                 </div>
+            </div>   
+                 <button>
+                        <Link to="/Home">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </Link>
+                 </button>   
+        </div>
+    )
+}
 
-// };
-
-
-// export default About;
+export default About;

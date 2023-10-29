@@ -4,12 +4,13 @@ import "./Landing.css";
 
 function Landing () {
     return (
-        <div className="landing-container">
+        <div className="landing-container text-center">
             <img src={logo} alt="logo"></img>
-            <h1>Bienvenido!</h1>
-            <Link to="/home" as="button" className="btn btn-outline-success btn-lg">
-                Ingresar
-            </Link>
+                <div className="button">
+                    <Link to="/home">
+                        Ingresar
+                    </Link>
+                </div>
         </div>
     )
 };

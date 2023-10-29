@@ -1,21 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BiFileFind, BiHeart } from 'react-icons/bi';
 import './Card.css';
 
 
 const Card = ({ id, image, name, species, gender }) => {
 
     return (
-      <div class="card">
-        <img src={image} class="card-img-top" alt={name}></img>
-        <div class="card-body">
-          <h5 class="card-title">{name}</h5>
-          <h2>{species}</h2>
-          <h2>{gender}</h2>
-          <Link to={`/detail/${id}`} class="btn btn-primary">Aquí iría a la descripción del personaje</Link>
-        </div>
+    <div className="container">
+      <div className="row">
+          <div class="card">
+              <img src={image} class="card-img-top" alt={name}></img>
+              <div class="card-body">
+                <h5 class="card-title">{name}</h5>
+                <h3>Especie: {species}</h3>
+                <h3>Género: {gender}</h3>
+              </div>
+       
+          <div className="card-footer text-muted d-flex justify-content-between">
+              <Link to={`/detail/${id}`}>
+                 <BiFileFind className="file"/>
+              </Link>
+              <Link to="/Favorites">
+                  <BiHeart className="file"/>
+              </Link>
+              </div>     
+            </div>
+          </div>
       </div>
-
     );
   }
 

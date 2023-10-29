@@ -2,12 +2,18 @@ nav.navbar {
     border: 2px solid #05f809;
     border-radius: 15px;
     width: auto;
-    height: 80%;
+    height: 20%;
     box-shadow: 0px 0px 10px 1px rgb(176, 247, 45);
     transition: all 0.3s ease;
   }
 
+  .navbar-toggler-custom {
+    width: 85px !important;
+  }
+
   nav.navbar a {
+    text-decoration: none;
+    color: inherit;
     font-size: 20px; 
   }
 

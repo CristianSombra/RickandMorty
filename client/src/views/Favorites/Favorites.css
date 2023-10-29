@@ -1,0 +1,18 @@
+.container .image img{
+    margin-top: 50px;
+    width: 50%;
+}
+
+.container h2{
+    margin-top: 40px;
+    font-size: 60px; 
+    color: green;
+    margin-bottom: 100px;
+}
+
+.container button a{
+    font-size: 20px; 
+    color: green;
+    text-decoration: none;
+}
+

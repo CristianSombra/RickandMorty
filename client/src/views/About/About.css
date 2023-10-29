@@ -1,19 +1,28 @@
-.about-container {
+.card-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 100px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
-.about-container h2 {
-    font-size: xx-large;
-    color: #39ff14;
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 2px rgb(176, 247, 45);
+    transform: scale(1.05);
+}
+
+.card p {
+    margin-top: 40px;
+    font-size: 20px; 
+    color: rgb(73, 243, 84);
     margin-bottom: 100px;
 }
 
-.about-container p {
-    color: aliceblue;
-    width: 60%;
-    align-self: center;
+.card-container button {
+    margin-top: 30px;
 }
+

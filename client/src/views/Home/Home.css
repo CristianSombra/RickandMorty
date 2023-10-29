@@ -3,6 +3,10 @@
     color: white;
   }
 
+.home-container h1 {
+  color: green;
+}
+
 .container-cardscontainer {
   margin-top: 5%;
 }

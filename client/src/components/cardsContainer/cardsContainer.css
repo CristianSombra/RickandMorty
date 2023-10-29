@@ -1,16 +1,21 @@
-
 .container button {
     background-color: black;
     color: white;
     border: 2px solid #05f809;
     border-radius: 25px;
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     box-shadow: 0px 0px 10px 1px rgb(176, 247, 45);
-    transition: all 0.3s ease;
     margin-right: 10px;
+    font-size: 20px;
+    color: green;
 }
 
+.container button:hover{
+    color: rgb(75, 247, 75);
+    transition: all 0.1s ease-in;
+    transform: scale(1.09);
+}
 
 @keyframes show {
     from {

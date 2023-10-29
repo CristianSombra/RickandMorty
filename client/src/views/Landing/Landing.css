@@ -1,9 +1,40 @@
 .landing-container {
-    padding: 100px 150px;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .landing-container img {
-    width: 70%;
+    width: 60%;
 
+}
+
+.landing-container .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: black;
+    border: 2px solid #05f809;
+    border-radius: 25px;
+    width: 150px;
+    height: 60px;
+    box-shadow: 0px 0px 10px 1px rgb(176, 247, 45);
+}
+
+.landing-container .button a {
+    font-size: 20px; 
+    color: green;
+    text-decoration: none;
+}
+
+.landing-container .button a:hover {
+    color: rgb(75, 247, 75);
+}
+
+.landing-container .button:hover {
+    transition: all 0.1s ease-in;
+    transform: scale(1.07);
 }

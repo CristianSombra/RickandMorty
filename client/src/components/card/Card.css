@@ -8,6 +8,22 @@
 
 .card img {
     margin-top: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
+}
 
+.card-body {
+    color: green;
+}
+
+.file {
+    color: green;
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+.file:hover {
+    color: rgb(75, 247, 75);
+    transition: all 0.1s ease-in;
+    transform: scale(1.09);
 }

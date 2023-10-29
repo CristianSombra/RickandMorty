@@ -1,12 +1,14 @@
 import Landing from "./Landing/Landing";
 import Home from "./Home/Home";
+import Favorites from "./Favorites/Favorites";
+import About from "./About/About";
 // import Detail from "./Detail/Detail";
-// import About from "./about/about"
 
 
 export { 
     Landing, 
-    Home, 
+    Home,
+    Favorites, 
+    About, 
     // Detail, 
-    // About 
 };
