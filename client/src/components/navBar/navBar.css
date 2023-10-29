@@ -1,0 +1,44 @@
+nav.navbar {
+    border: 2px solid #05f809;
+    border-radius: 15px;
+    width: auto;
+    height: 80%;
+    box-shadow: 0px 0px 10px 1px rgb(176, 247, 45);
+    transition: all 0.3s ease;
+  }
+
+  nav.navbar a {
+    font-size: 20px; 
+  }
+
+  nav.navbar a:hover {
+    transition: all 0.1s ease-in;
+    transform: scale(1.09);
+  }
+  
+  nav.navbar .navbar-nav .nav-link {
+    color: green;
+  }
+
+  nav.navbar .navbar-nav .nav-link:hover {
+    color: rgb(75, 247, 75);
+    
+  }
+
+  nav.navbar .dropdown-menu {
+    border: 2px solid #05f809;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 1px rgb(176, 247, 45);
+  }
+  
+  nav.navbar .dropdown-menu .dropdown-item {
+    color: green;
+  }
+  
+  nav.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: rgb(75, 247, 75);
+    transition: all 0.1s ease-in;
+    transform: scale(1.09);
+    transform-origin: left; 
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Routes, Route, useLocation} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import { Landing, Home } from './views/index';
 import Navbar from './components/navBar/navBar'
 import './App.css';

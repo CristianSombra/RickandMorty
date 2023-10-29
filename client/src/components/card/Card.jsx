@@ -1,14 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './Card.css';
 
 
 const Card = ({ id, image, name, species, gender }) => {
-  const cardStyle = {
-    width: '18rem'
-  };
-  
+
     return (
-      <div class="card" style={cardStyle}>
+      <div class="card">
         <img src={image} class="card-img-top" alt={name}></img>
         <div class="card-body">
           <h5 class="card-title">{name}</h5>

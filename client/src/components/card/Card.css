@@ -1,0 +1,13 @@
+.card {
+    background-color: black;
+    border-radius: 15px;
+    border-color: green;
+    box-shadow: 0px 0px 5px 1px rgb(176, 247, 45);
+    width: '18rem'
+}
+
+.card img {
+    margin-top: 5px;
+    border-radius: 5px;
+
+}
