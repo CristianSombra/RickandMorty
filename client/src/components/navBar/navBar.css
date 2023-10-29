@@ -11,6 +11,12 @@ nav.navbar {
     width: 85px !important;
   }
 
+  .navbar-toggler-icon-custom {
+    border-radius: 6px;
+    background-color: rgba(9, 229, 9, 0.542);
+
+  }
+
   nav.navbar a {
     text-decoration: none;
     color: inherit;

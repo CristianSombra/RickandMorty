@@ -1,4 +1,4 @@
-import {ERROR, GET_CHARACTERS } from "./actions";
+import {ERROR, GET_CHARACTERS, GET_CHARACTER_ID } from "./actions";
 
 const initialState = {
     characters: []};
@@ -16,6 +16,11 @@ const rootReducer = (state = initialState, action) => {
             return {
                 ...state,
                 characters: action.payload, 
+            }
+        case GET_CHARACTER_ID:
+            return {
+                ...state,
+                character: action.payload
             }
         // case ADD_FAVORITE:
         // return {

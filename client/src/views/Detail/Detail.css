@@ -1,0 +1,13 @@
+.small-card{
+    max-width: 400px; /* Define el ancho máximo de la tarjeta */
+    margin: 20px auto; /* Centra la tarjeta en el contenedor */
+}
+
+.small-card img {
+    max-width: 380px;
+    margin: 5px auto;
+}
+
+.nav-item {
+    margin-top: 10px;
+}

@@ -4,7 +4,7 @@ import { BiFileFind, BiHeart } from 'react-icons/bi';
 import './Card.css';
 
 
-const Card = ({ id, image, name, species, gender }) => {
+const Card = ({ id, image, name, species }) => {
 
     return (
     <div className="container">
@@ -14,7 +14,6 @@ const Card = ({ id, image, name, species, gender }) => {
               <div class="card-body">
                 <h5 class="card-title">{name}</h5>
                 <h3>Especie: {species}</h3>
-                <h3>Género: {gender}</h3>
               </div>
        
           <div className="card-footer text-muted d-flex justify-content-between">
