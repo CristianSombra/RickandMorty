@@ -35,9 +35,9 @@ export default function NavBar () {
                     Contactos
                   </a>
                   <ul class="dropdown-menu" style={{ backgroundColor: 'black'}}>
-                    <li><a class="dropdown-item" href="#">Mi Linkedin</a></li>
-                    <li><a class="dropdown-item" href="#">Mi Github</a></li>
-                    <li><a class="dropdown-item" href="#">Mi Portafolio</a></li>
+                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/cristian-sombra-098241253/" target="_blank">Mi Linkedin</a></li>
+                    <li><a class="dropdown-item" href="https://github.com/CristianSombra" target="_blank">Mi Github</a></li>
+                    <li><a class="dropdown-item" href="https://cristiansombra.com" target="_blank">Mi Portafolio</a></li>
                   </ul>
                 </li>
               </ul>

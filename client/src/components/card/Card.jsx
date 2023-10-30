@@ -13,7 +13,7 @@ const Card = ({ id, image, name, species }) => {
               <img src={image} class="card-img-top" alt={name}></img>
               <div class="card-body">
                 <h5 class="card-title">{name}</h5>
-                <h3>Especie: {species}</h3>
+                <h5>Especie: {species}</h5>
               </div>
        
           <div className="card-footer text-muted d-flex justify-content-between">
