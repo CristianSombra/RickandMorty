@@ -3,7 +3,13 @@
     border-radius: 15px;
     border-color: green;
     box-shadow: 0px 0px 5px 1px rgb(176, 247, 45);
-    width: '18rem'
+    width: '18rem';
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 2px rgb(176, 247, 45);
+    transform: scale(1.05);
 }
 
 .card img {

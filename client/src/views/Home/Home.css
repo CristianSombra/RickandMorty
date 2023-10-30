@@ -1,13 +1,14 @@
 .home-container {
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
   }
 
 .home-container h1 {
+  font-size: 35px;
   color: green;
 }
 
 .container-cardscontainer {
-  margin-top: 2%;
+  margin-top: 1%;
 }
   
