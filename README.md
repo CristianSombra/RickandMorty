@@ -1,4 +1,4 @@
-#Proyecto Integrador: Rick and Morty Explorer
+# Proyecto Integrador: Rick and Morty Explorer
 **Descripción del Proyecto:**
 
 Rick and Morty es una (SPA) diseñada para mostrar personajes de la serie.
