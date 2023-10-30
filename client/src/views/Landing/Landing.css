@@ -7,7 +7,7 @@
 }
 
 .landing-container img {
-    width: 60%;
+    width: 50%;
 
 }
 
@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    margin-left: 3%;
     background-color: black;
     border: 2px solid #05f809;
     border-radius: 25px;
@@ -38,3 +39,17 @@
     transition: all 0.1s ease-in;
     transform: scale(1.07);
 }
+
+@media screen and (max-width: 950px) {
+
+    .landing-container img {
+        width: 100%;
+    
+    }
+    .landing-container .button {
+
+        margin-left: 4%;
+
+    }
+
+  }
